@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют в Молдове</title>
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="titles">
+                <div class="title__h3">
+                    <img src="img/icon.png" alt="Icon" class="h3__img">
+                    <h3 class="h3__text">money</h3>
+                </div>
+                <h2 class="h2__text">Конвертер валют</h2>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="converter">
+                <div class="converter__imgs">
+                    <img src="img/img-converter-1.png" class="img-converter">
+                    <img src="img/img-converter-2.png" class="img-converter">
+                </div>
+
+                <div class="converter__content">
+                    <div class="converter__titles">
+                    <div class="titles__desc">
+                        <h3 class="desc-h3">Текущий курс валют в Молдове</h3>
+                        <p class="desc-p">Данные предоставлены ресурсом <a href="https://www.floatrates.com/" target="_blank">floatrates.com</a></p>
+                    </div>
+                    <div>
+                        <img src="img/flag-md.png" class="titles__flag">
+                    </div>
+                    </div>
+
+                    <div class="converter__calculations">
+                        <div class="inputs">
+                            <form>
+                                <div class="row">
+                                  <div class="col">
+                                    <input id="input" type="number" class="form-control" placeholder="Сумма в леях" id="name" autofocus>
+                                  </div>
+                                  <div class="col">
+                                    <input id="result" type="number" class="form-control" placeholder="Вторая валюта" id="name">
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="selects">
+                            <form>
+                                <div class="row">
+                                  <div class="col">
+                                    <select disabled class="form-control">
+                                        <option value="MDL" selected>Лей</option>
+                                      </select>
+                                  </div>
+                                  <div class="col">
+                                    <select class="form-control" id="select">
+                                        <option value="usd">Доллар США</option>
+                                        <option value="eur">Евро</option>
+                                        <option value="gbp">Фунт стерлингов</option>
+                                      </select>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="section">
+            <div class="rates">
+                <div class="rates__block">
+                    <img src="img/flag-united-states.png" class="rates__flag">
+                    <div class="rates__value" data-value="USD">--.--</div>
+                </div>
+                <div class="rates__block">
+                    <img src="img/flag-european-union.png"  class="rates__flag">
+                    <div class="rates__value" data-value="EUR">--.--</div>
+                </div>
+                <div class="rates__block">
+                    <img src="img/flag-united-kingdom.png"  class="rates__flag">
+                    <div class="rates__value" data-value="GBP">--.--</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p>Maxuta Marina, 2022</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

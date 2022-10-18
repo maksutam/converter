@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Russo One";
+    src: url("../fonts/RussoOne.ttf") format("truetype");
+    }
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #EAA28C;
+    background-image: url(../img/bg-top.png), url(../img/bg-bottom.png);
+    background-position: left top, left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 40%;
+    font-size: 14px;
+    color: #fff;
+}
+.none {
+    display: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 7vw;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 18vh;
+}
+.titles {
+    max-width: 30vw;
+}
+.title__h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+.h3__img {
+    width: calc(2.2rem + 2.2vw - 2vh);
+}
+.h3__text {
+    font-size: calc(2.2rem + 2.2vw - 2vh);
+    font-weight: 600;
+}
+.h2__text {
+    font-family: 'Russo One';
+    font-size: calc(3rem + 3vw - 2vh);
+}
+.main {
+}
+.converter {
+    width: 30vw;
+    height: 75vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.converter__imgs {
+    background-color: #E8EEF3;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+.img-converter {
+    height: 8em;
+}
+.converter__content {
+    padding: 1em;
+}
+.converter__titles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1em;
+
+}
+.titles__desc {
+    color: #000;
+}
+.desc-h3 {
+    font-size: 1.17em;
+    font-weight: 700;
+    padding-top: 1em;
+    margin-bottom: -1px;
+}
+.desc-p {
+    font-size: 0.8em;
+    color: #656F77;
+}
+.desc-p a {
+    color: #656F77;
+}
+.desc-p a:hover {
+    text-decoration: none;
+    color: #2da1ff;
+}
+.titles__flag {
+    height: 3em;
+}
+.converter__calculations {
+    padding: 0 2em 0 2em;
+}
+.inputs {
+    margin-bottom: 1em;
+}
+.rates {
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.rates__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DED2F9;
+    padding-bottom: 0.4em;
+    padding-top: 0.5em;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2em;
+    font-weight: 500;
+}
+.rates__flag {
+    width: 2em;
+    margin-bottom: 0.4em;
+}
+.rates__value {
+    font-family: 'Russo One';
+    font-size: 0.8em;
+    color: #1a0141;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 2em;
+}
