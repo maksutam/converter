@@ -17,7 +17,7 @@ setInterval(getCurrencies, 10000);
 // Функция получения курса валют и отображения их на странице
 async function getCurrencies() {
 
-const response = await fetch('http://www.floatrates.com/daily/mdl.json');
+const response = await fetch('https://www.floatrates.com/daily/mdl.json');
 const data = await response.json();
 const result = await data;
 // console.log(result);
